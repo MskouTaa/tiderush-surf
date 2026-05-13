@@ -24,8 +24,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This looks for the dist folder wherever it was created
-          path: './client/dist'
+          # We are changing this to check the root dist folder
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
